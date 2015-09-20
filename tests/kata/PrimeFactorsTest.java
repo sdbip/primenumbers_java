@@ -40,4 +40,9 @@ public class PrimeFactorsTest {
 		assertEquals(Arrays.asList(2, 2, 2), generate(8));
 	}
 
+	@Test
+	public void generate_nine_returnsThreeThree() {
+		assertEquals(Arrays.asList(3, 3), generate(9));
+	}
+
 }
