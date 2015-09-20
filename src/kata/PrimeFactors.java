@@ -7,8 +7,8 @@ public class PrimeFactors {
 
 	public static List<Integer> generate(int n) {
 		ArrayList<Integer> primes = new ArrayList<>();
-		int prime = 2;
-		for (; n > 1; ) {
+
+		for (int prime = 2; n > 1; ) {
 			while (n % prime == 0) {
 				n /= prime;
 				primes.add(prime);
