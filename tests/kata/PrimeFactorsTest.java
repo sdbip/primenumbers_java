@@ -25,4 +25,9 @@ public class PrimeFactorsTest {
 		assertEquals(Collections.singletonList(3), generate(3));
 	}
 
+	@Test
+	public void generate_four_returnsTwoTwo() {
+		assertEquals(Arrays.asList(2, 2), generate(4));
+	}
+
 }
