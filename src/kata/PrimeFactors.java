@@ -9,8 +9,7 @@ public class PrimeFactors {
 		ArrayList<Integer> primes = new ArrayList<>();
 
 		for (int prime = 2; n > 1; ++prime) {
-			for (; n % prime == 0; ) {
-				n /= prime;
+			for (; n % prime == 0; n /= prime) {
 				primes.add(prime);
 			}
 		}
