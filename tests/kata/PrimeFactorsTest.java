@@ -2,6 +2,7 @@ package kata;
 
 import org.junit.Test;
 
+import java.util.Arrays;
 import java.util.Collections;
 
 import static kata.PrimeFactors.*;
@@ -17,6 +18,11 @@ public class PrimeFactorsTest {
 	@Test
 	public void generate_two_returnsTwo() {
 		assertEquals(Collections.singletonList(2), generate(2));
+	}
+
+	@Test
+	public void generate_three_returnsThree() {
+		assertEquals(Collections.singletonList(3), generate(3));
 	}
 
 }
