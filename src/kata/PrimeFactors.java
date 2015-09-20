@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrimeFactors {
+
 	public static List<Integer> generate(int n) {
 		ArrayList<Integer> primes = new ArrayList<>();
-		if (n % 2 == 0) {
-			n /= 2;
-			primes.add(2);
+		int prime = 2;
+		if (n % prime == 0) {
+			n /= prime;
+			primes.add(prime);
 		}
 		if (n > 1) primes.add(n);
 		return primes;
