@@ -8,12 +8,11 @@ public class PrimeFactors {
 	public static List<Integer> generate(int n) {
 		ArrayList<Integer> primes = new ArrayList<>();
 
-		for (int prime = 2; n > 1; ) {
+		for (int prime = 2; n > 1; ++prime) {
 			while (n % prime == 0) {
 				n /= prime;
 				primes.add(prime);
 			}
-			++prime;
 		}
 		return primes;
 	}
