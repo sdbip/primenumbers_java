@@ -30,4 +30,9 @@ public class PrimeFactorsTest {
 		assertEquals(Arrays.asList(2, 2), generate(4));
 	}
 
+	@Test
+	public void generate_six_returnsTwoThree() {
+		assertEquals(Arrays.asList(2, 3), generate(6));
+	}
+
 }
